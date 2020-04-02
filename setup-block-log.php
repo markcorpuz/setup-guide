@@ -26,7 +26,7 @@ function setup_block_log_function() {
     //wp_enqueue_script( 'spk_screensizer_js', plugins_url( 'js/asset.js', __FILE__ ), NULL, NULL, true );
 
     // enqueue styles
-    wp_enqueue_style( 'setup-block-log-style', plugins_url( 'css/setup-block-log.css', __FILE__ ) );
+    wp_enqueue_style( 'setup_block_log_style', plugins_url( 'css/setup_block_log.css', __FILE__ ) );
 
 }
 
