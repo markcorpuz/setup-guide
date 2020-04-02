@@ -1,0 +1,37 @@
+/* SETUP-BE | BLOCK-CUSTOM | SETUP-BE-3300 | LOG - 2020-03-22 */
+.log.module {
+  margin-bottom: 0.5rem;
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  padding-top: 2px;
+  border-top: 1px solid #eee; }
+
+.log.module.groupinfo {
+  grid-template-columns: 1fr;
+  padding-left: 170px; }
+
+.log.module.highlight-red, .log.module.highlight-blue, .log.module.highlight-green {
+  color: white;
+  grid-template-columns: 165px 1fr;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top: none; }
+
+.log.module.highlight-red {
+  background-color: #e5565d; }
+
+.log.module.highlight-blue {
+  background-color: #56a5e5; }
+
+.log.module.highlight-green {
+  background-color: #56e597; }
+
+.log.module .item.date, .log.module .item.time, .log.module .item.datetime, .log.module .item.code {
+  font-weight: 700;
+  margin-right: 0.5rem; }
+
+.log.module .item.code {
+  margin-right: 1rem; }
+
+.item.detail :last-child {
+  margin-bottom: 0; }
