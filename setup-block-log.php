@@ -20,19 +20,19 @@ function setup_block_log_fn() {
 }
 
 // Enqueue Style
-function enqueue_spk_screensizer() {
+function setup_block_log_function() {
 
     // last arg is true - will be placed before </body>
     //wp_enqueue_script( 'spk_screensizer_js', plugins_url( 'js/asset.js', __FILE__ ), NULL, NULL, true );
 
     // enqueue styles
     wp_enqueue_style( 'setup-block-log-style', plugins_url( 'css/setup-block-log.css', __FILE__ ) );
-    
+
 }
 
 if ( !is_admin() ) {
 
     // ENQUEUE SCRIPTS
-    add_action( 'wp_enqueue_scripts', 'enqueue_spk_screensizer' );
+    add_action( 'wp_enqueue_scripts', 'setup_block_log_function' );
 
 }
