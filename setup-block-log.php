@@ -24,9 +24,9 @@ function setup_block_log_function() {
 
     // last arg is true - will be placed before </body>
     //wp_enqueue_script( 'spk_screensizer_js', plugins_url( 'js/asset.js', __FILE__ ), NULL, NULL, true );
-
+	
     // enqueue styles
-    wp_enqueue_style( 'setup_block_log_style', plugins_url( 'css/setup_block_log.css', __FILE__ ) );
+    wp_enqueue_style( 'setup_block_log_style', plugins_url( 'css/setup_block_log_style.css', __FILE__ ) );
 
 }
 
