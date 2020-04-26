@@ -34,7 +34,7 @@ function ss_block_acf_init() {
     		'mode'			    => 'edit',
     		'keywords'		    => array( 'update', 'log' ),
         ),
-      
+/*      
         'feature' => array(
             'name'              => 'feature_display',
             'title'             => __('Feature'),
@@ -44,7 +44,7 @@ function ss_block_acf_init() {
             'mode'              => 'edit',
             'keywords'          => array( 'feature', 'highlight' ),
         ),
-        
+*/
     );
 
     // Bail out if function doesn’t exist or no blocks available to register.
