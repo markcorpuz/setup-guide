@@ -104,11 +104,15 @@ if( $group_sec || $group_info ) {
         // both have contents
         $classes[] = 'groupboth';
     }
-    
+
+    //var_dump( $block );
+
     // Include CSS selectors manually entered thru wp-admin
-    if( $block[ 'className' ] ) {
+    //if( $block[ 'className' ] ) {
+    if( array_key_exists( 'className', $block ) ) {
         $classes = array_merge( $classes, explode( ' ', $block[ 'className' ] ) );
     }
 
     echo '<div class="'.join( ' ', $classes ).'">'.$group_sec.$group_info.'</div>'; // DIV CONTAINER
+    
 }
