@@ -53,7 +53,8 @@ if( $out ) {
     }*/
     
     // Include CSS selectors manually entered thru wp-admin
-    if( $block[ 'className' ] ) {
+    //if( $block[ 'className' ] ) {
+    if( array_key_exists( 'className', $block ) ) {
         $classes = array_merge( $classes, explode( ' ', $block[ 'className' ] ) );
     }
 
