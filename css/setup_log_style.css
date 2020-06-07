@@ -1,0 +1,252 @@
+/* SETUP-BE | 1.0.0 | 200326 | assets/scss/partials/base.scss
+---------------------------------------------------------------------------------------------------- */
+/*  SETUP-BE | 1.0.0 | 200408 | setup-be/modules/setup-be-100/brand-color.scss
+---------------------------------------------------------------------------------------------------- */
+/**
+ * Brand Color
+ *
+ */
+/*  SETUP-BE | 1.0.0 | 200408 | setup-be/modules/setup-be-100/helpers.scss
+---------------------------------------------------------------------------------------------------- */
+/**
+ * Button Reset
+ *
+ */
+/**
+ * Grid, Center Last
+ *
+ */
+/**
+ * Margin, No Edge
+ * Removes left margin from first item, right margin from last item
+ */
+/**
+ * Icon Position
+ *
+ */
+/**
+ * Block Cover
+ * Creates a block that covers the full width/height of parent div. Typically used on a :before pseudo element
+ */
+/**
+ * Placeholder Color
+ *
+ */
+/**
+ * Clearfix
+ *
+ */
+/**
+ * Font Sizes
+ *
+**/
+/**
+ * Columns
+ *
+ */
+/**
+ * Columns, Mobile
+ *
+ */
+/**
+ * Columns, Tablet
+ *
+ */
+/**
+ * Columns, Tablet Up
+ *
+ */
+/**
+ * Columns, Desktop
+ *
+ */
+/* SETUP-BE | 1.0.0 | 200408 | setup-be/modules/setup-be-100/base-styles.scss
+---------------------------------------------------------------------------------------------------- */
+/*  SETUP-BE | 1.0.0 | 200420 | setup-be/type/setup-be-100/fontsize.scss
+---------------------------------------------------------------------------------------------------- */
+.fontsize-xhuge {
+  font-size: 3.25rem;
+}
+@media (min-width: 768px) {
+  .fontsize-xhuge {
+    font-size: 3.625rem;
+  }
+}
+@media (min-width: 992px) {
+  .fontsize-xhuge {
+    font-size: 4rem;
+  }
+}
+
+.fontsize-huge {
+  font-size: 2.25rem;
+}
+@media (min-width: 768px) {
+  .fontsize-huge {
+    font-size: 2.625rem;
+  }
+}
+@media (min-width: 992px) {
+  .fontsize-huge {
+    font-size: 3rem;
+  }
+}
+
+.fontsize-large {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .fontsize-large {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 992px) {
+  .fontsize-large {
+    font-size: 2.25rem;
+  }
+}
+
+.fontsize-medium {
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  .fontsize-medium {
+    font-size: 1.375rem;
+  }
+}
+@media (min-width: 992px) {
+  .fontsize-medium {
+    font-size: 1.5rem;
+  }
+}
+
+.fontsize-small {
+  font-size: 1.125rem;
+}
+@media (min-width: 768px) {
+  .fontsize-small {
+    font-size: 1.25rem;
+  }
+}
+
+.fontsize-normal {
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .fontsize-normal {
+    font-size: 1.125rem;
+  }
+}
+
+.fontsize-base {
+  font-size: 0.875rem;
+}
+@media (min-width: 768px) {
+  .fontsize-base {
+    font-size: 1rem;
+  }
+}
+
+.item.date,
+.item.time,
+.item.datetime,
+.item.label,
+.item.detail,
+.item.title,
+.item.summary,
+.item.info,
+.item.link, .fontsize-smaller {
+  font-size: 0.875rem;
+}
+
+.fontsize-tiny {
+  font-size: 0.75rem;
+}
+
+/* SETUP-LOG | 1.0.2 | 200606 | setup-be/block-custom/setup-log-101/log.scss
+---------------------------------------------------------------------------------------------------- */
+/*
+	.log.module {
+
+	}
+	.log.module.groupboth {
+		//border-top: 1px solid red;
+	}
+	.log.module.groupspec {
+		//border-top: 1px solid green;
+	}
+	.log.module.groupinfo {
+		grid-template-columns: 1fr;
+		//border-top: 1px solid blue;
+	}
+
+	// TEXT-VARIATIONS
+	.log.module.text-medium {
+		@extend %fontsize-medium !optional;
+	}
+
+	%log-highlight-default {
+		color: white;
+		grid-template-columns: 165px 1fr;
+		padding-left: 5px;
+		padding-right: 5px;
+		//padding: 2px 10px;
+		border-top: none;
+	}
+
+	// HIGHLIGHTS
+	.log.module.highlight-red {
+		@extend %log-highlight-default !optional;
+		background-color: #e5565d;
+	}
+
+	.log.module.highlight-blue {
+		@extend %log-highlight-default !optional;
+		background-color: #56a5e5;
+	}
+
+	.log.module.highlight-green {
+		@extend %log-highlight-default !optional;
+		background-color: #56e597;
+	}
+*/
+.module.log {
+  margin-bottom: 0.5rem;
+  padding-top: 2px;
+  border-top: 1px solid #eee;
+}
+.module.log.main-side {
+  display: grid;
+  grid-template-areas: "log-main log-side";
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 2px;
+  border-top: 1px solid #eee;
+}
+.module.log.main-side .items.main {
+  background-color: yellow;
+  grid-area: log-main;
+}
+.module.log.main-side .items.side {
+  background-color: red;
+  grid-area: log-side;
+}
+
+.module.log.side-main {
+  display: grid;
+  grid-template-areas: "log-side log-main";
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 2px;
+  border-top: 1px solid #eee;
+}
+.module.log.side-main .items.main {
+  background-color: yellow;
+  grid-area: log-main;
+}
+.module.log.side-main .items.side {
+  background-color: red;
+  grid-area: log-side;
+}
