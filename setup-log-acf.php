@@ -38,6 +38,17 @@ function setup_log_block_acf_init() {
     		'mode'			    => 'edit',
     		'keywords'		    => array( 'update', 'log' ),
         ),
+
+        'guides' => array(
+            'name'              => 'guide',
+            'title'             => __('Guide'),
+            'render_template'   => plugin_dir_path( __FILE__ ).'partials/blocks/setup-log-block-guide.php',
+            'category'          => 'setup',
+            'icon'              => 'list-view',
+            'mode'              => 'edit',
+            'keywords'          => array( 'update', 'log' ),
+        ),
+
     );
 
     // Bail out if function doesn’t exist or no blocks available to register.

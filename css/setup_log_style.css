@@ -138,11 +138,11 @@
   }
 }
 
-.fontsize-base {
+.item.label, .fontsize-base {
   font-size: 0.875rem;
 }
 @media (min-width: 768px) {
-  .fontsize-base {
+  .item.label, .fontsize-base {
     font-size: 1rem;
   }
 }
@@ -161,6 +161,120 @@
 
 .fontsize-tiny {
   font-size: 0.75rem;
+}
+
+/* SETUP-BE | 1.0.0 | 200514 | setup-be/ui/setup-be-100/shadow.scss
+---------------------------------------------------------------------------------------------------- */
+.shadow-inner,
+.shadow-inner-bottom {
+  -webkit-box-shadow: inset 0px -100px 20px -100px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0px -100px 20px -100px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px -100px 20px -100px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-inner-top {
+  -webkit-box-shadow: inset 0px 100px 20px -100px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0px 100px 20px -100px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 100px 20px -100px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-inner-dark,
+.shadow-inner-dark-bottom {
+  -webkit-box-shadow: inset 0px -100px 40px -100px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px -100px 40px -100px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px -100px 40px -100px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-inner-dark-top {
+  -webkit-box-shadow: inset 0px 100px 40px -100px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px 100px 40px -100px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 100px 40px -100px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-inner-darker,
+.shadow-inner-darker-bottom {
+  -webkit-box-shadow: inset 0px -100px 60px -100px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0px -100px 60px -100px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px -100px 60px -100px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-inner-darker-top {
+  -webkit-box-shadow: inset 0px 100px 60px -100px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0px 100px 60px -100px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 100px 60px -100px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-lighter,
+.shadow-outer-lighter, a.shadow-light:hover {
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-light,
+.shadow-outer-light, a.shadow:hover, a.shadow-light,
+a.shadow-light:link {
+  -webkit-box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.shadow,
+.shadow-outer, a.shadow,
+a.shadow:link {
+  -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-dark,
+.shadow-outer-dark {
+  -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-darker,
+.shadow-outer-darker {
+  -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.shadow-edge {
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-edge-top {
+  -webkit-box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-edge-dark {
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-edge-dark-top {
+  -webkit-box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-edge-darker {
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.75);
+}
+
+.shadow-edge-darker-top {
+  -webkit-box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.75);
 }
 
 /* SETUP-LOG | 1.0.2 | 200606 | setup-be/block-custom/setup-log-101/log.scss
@@ -249,4 +363,67 @@
 .module.log.side-main .items.side {
   background-color: red;
   grid-area: log-side;
+}
+
+/* SETUP-LOG | 1.0.2 | 200607 | setup-be/block-custom/setup-log-102/guide.scss
+---------------------------------------------------------------------------------------------------- */
+.module.guide.summary-bg-darkgray .item.summary, .module.guide.summary-bg-gray .item.summary, .module.guide.summary-bg-lightgray .item.summary, .module.guide.summary-bg-blue .item.summary, .module.guide.summary-bg-red .item.summary, .module.guide.summary-bg-orange .item.summary, .module.guide.summary-bg-yellow .item.summary, .module.guide.summary-bg-green .item.summary, .module.guide.label-bg-darkgray .item.label, .module.guide.label-bg-gray .item.label, .module.guide.label-bg-lightgray .item.label, .module.guide.label-bg-blue .item.label, .module.guide.label-bg-red .item.label, .module.guide.label-bg-orange .item.label, .module.guide.label-bg-yellow .item.label, .module.guide.label-bg-green .item.label {
+  color: #fff;
+}
+
+.module.guide.summary-bg-lightgray .item.summary, .item.label {
+  color: #424242;
+}
+
+.module.guide.label-bg-lightgray .item.label, .module.guide.guide-label2 .item.label {
+  color: #BDBDBD;
+}
+
+.module.guide.summary-bg-darkgray .item.summary, .module.guide.label-bg-darkgray .item.label {
+  background-color: #424242;
+}
+
+.module.guide.summary-bg-gray .item.summary, .module.guide.label-bg-gray .item.label {
+  background-color: #BDBDBD;
+}
+
+.module.guide.summary-bg-lightgray .item.summary, .module.guide.label-bg-lightgray .item.label {
+  background-color: #EEEEEE;
+}
+
+.module.guide.summary-bg-blue .item.summary, .module.guide.label-bg-blue .item.label {
+  background-color: #0079bf;
+}
+
+.module.guide.summary-bg-red .item.summary, .module.guide.label-bg-red .item.label {
+  background-color: #eb5a46;
+}
+
+.module.guide.summary-bg-orange .item.summary, .module.guide.label-bg-orange .item.label {
+  background-color: #ff9f1a;
+}
+
+.module.guide.summary-bg-yellow .item.summary, .module.guide.label-bg-yellow .item.label {
+  background-color: #f2d600;
+}
+
+.module.guide.label-bg-green .item.label {
+  background-color: #61bd4f;
+}
+
+.item.label {
+  font-weight: 600;
+}
+.module.guide.label-tab .item.label {
+  display: inline-block;
+}
+.module.guide.label-bg-darkgray .item.label, .module.guide.label-bg-gray .item.label, .module.guide.label-bg-lightgray .item.label, .module.guide.label-bg-blue .item.label, .module.guide.label-bg-red .item.label, .module.guide.label-bg-orange .item.label, .module.guide.label-bg-yellow .item.label, .module.guide.label-bg-green .item.label {
+  padding: 4px 8px;
+}
+.module.guide .item.summary {
+  margin-top: 4px;
+}
+.module.guide.summary-bg-darkgray .item.summary, .module.guide.summary-bg-gray .item.summary, .module.guide.summary-bg-lightgray .item.summary, .module.guide.summary-bg-blue .item.summary, .module.guide.summary-bg-red .item.summary, .module.guide.summary-bg-orange .item.summary, .module.guide.summary-bg-yellow .item.summary, .module.guide.summary-bg-green .item.summary {
+  margin-top: 0;
+  padding: 4px 8px;
 }
