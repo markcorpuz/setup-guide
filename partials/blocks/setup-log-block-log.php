@@ -8,17 +8,12 @@
  * @license      GPL-2.0+
 **/
 
-$log_label      = get_field( 'log_label' );
-$log_detail     = get_field( 'log_detail' );
 $log_date       = get_field( 'log_date' );
 $log_time       = get_field( 'log_time' );
 
-$log_title      = get_field( 'log_title' );
+$log_label      = get_field( 'log_label' );
 $log_summary    = get_field( 'log_summary' );
 $log_info       = get_field( 'log_info' );
-
-$log_pic        = get_field( 'log_pic' );
-$log_link       = get_field( 'log_link' );
 
 
 /**
@@ -40,17 +35,9 @@ echo '<div class="'.join( ' ', $classes ).'">';
      * SIDE OPENING
      * 
      */
-    if( $log_label || $log_date || $log_time || $log_detail ) {
+    if( $log_date || $log_time ) {
         echo '<div class="items side">';
     }
-
-        /**
-         * LABEL
-         * 
-         */
-        if ( $log_label ) {
-            echo '<div class="item label">'. $log_label .'</div>';
-        }
 
         /**
          * DATE, TIME & DATETIME
@@ -65,14 +52,6 @@ echo '<div class="'.join( ' ', $classes ).'">';
             echo '<div class="item time">'. $log_time .'</div>';
         }
 
-        /**
-         * DETAIL
-         * 
-         */
-        if ( $log_detail ) {
-            echo '<div class="item detail">'. $log_detail .'</div>';
-        }
-
     /**
      * SIDE CLOSING
      * 
@@ -85,16 +64,16 @@ echo '<div class="'.join( ' ', $classes ).'">';
      * MAIN OPENING
      * 
      */
-    if( $log_title || $log_summary || $log_info || $log_link ) {
+    if( $log_label || $log_summary || $log_info ) {
         echo '<div class="items main">';
     }
 
         /**
-         * TITLE
+         * LABEL
          * 
          */
-        if ( $log_title ) {
-            echo '<div class="item title">'. $log_title .'</div>';
+        if ( $log_label ) {
+            echo '<div class="item label">'. $log_label .'</div>';
         }
 
         /**
@@ -113,19 +92,11 @@ echo '<div class="'.join( ' ', $classes ).'">';
             echo '<div class="item info">'. $log_info .'</div>';
         }
 
-        /**
-         * LINK
-         * 
-         */
-        if ( $log_link ) {
-            echo '<div class="item link">'. $log_link .'</div>';
-        }
-
     /**
      * MAIN CLOSING
      * 
      */
-    if( $log_title || $log_summary || $log_info || $log_link ) {
+    if( $log_label || $log_summary || $log_info ) {
         echo '</div>';
     }
 

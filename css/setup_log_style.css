@@ -138,24 +138,24 @@
   }
 }
 
-.item.label, .fontsize-base {
+.item.label,
+.item.summary,
+.item.info, .fontsize-base {
   font-size: 0.875rem;
 }
 @media (min-width: 768px) {
-  .item.label, .fontsize-base {
+  .item.label,
+.item.summary,
+.item.info, .fontsize-base {
     font-size: 1rem;
   }
 }
 
-.item.date,
-.item.time,
-.item.datetime,
 .item.label,
-.item.detail,
-.item.title,
 .item.summary,
-.item.info,
-.item.link, .fontsize-smaller {
+.item.info, .item.date,
+.item.time,
+.item.datetime, .fontsize-smaller {
   font-size: 0.875rem;
 }
 
@@ -277,140 +277,155 @@ a.shadow:link {
   box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.75);
 }
 
-/* SETUP-LOG | 1.0.2 | 200606 | setup-be/block-custom/setup-log-101/log.scss
+/* SETUP-LOG | 1.0.3 | 200610 | setup-be/block-custom/setup-log-103/log.scss
 ---------------------------------------------------------------------------------------------------- */
-/*
-	.log.module {
+.module.guide.summary-bg-darkgray .item.summary, .module.guide.summary-bg-gray .item.summary, .module.guide.summary-bg-lightgray .item.summary, .module.guide.summary-bg-blue .item.summary, .module.guide.summary-bg-red .item.summary, .module.guide.summary-bg-orange .item.summary, .module.guide.summary-bg-yellow .item.summary, .module.guide.summary-bg-green .item.summary, .module.guide.label-bg-darkgray .item.label, .module.guide.label-bg-gray .item.label, .module.guide.label-bg-lightgray .item.label, .module.guide.label-bg-blue .item.label, .module.guide.label-bg-red .item.label, .module.guide.label-bg-orange .item.label, .module.guide.label-bg-yellow .item.label, .module.guide.label-bg-green .item.label, .module.guide.module-bg-darkgray, .module.guide.module-bg-gray, .module.guide.module-bg-lightgray, .module.guide.module-bg-blue, .module.guide.module-bg-red, .module.guide.module-bg-orange, .module.guide.module-bg-yellow, .module.guide.module-bg-green, .module.log.module-bg-darkgray, .module.log.module-bg-gray, .module.log.module-bg-lightgray, .module.log.module-bg-blue, .module.log.module-bg-red, .module.log.module-bg-orange, .module.log.module-bg-yellow, .module.log.module-bg-green, .module.log.module-bg-darkgray .item.label, .module.log.module-bg-gray .item.label, .module.log.module-bg-lightgray .item.label, .module.log.module-bg-blue .item.label, .module.log.module-bg-red .item.label, .module.log.module-bg-orange .item.label, .module.log.module-bg-yellow .item.label, .module.log.module-bg-green .item.label,
+.module.log.module-bg-darkgray .item.summary,
+.module.log.module-bg-gray .item.summary,
+.module.log.module-bg-lightgray .item.summary,
+.module.log.module-bg-blue .item.summary,
+.module.log.module-bg-red .item.summary,
+.module.log.module-bg-orange .item.summary,
+.module.log.module-bg-yellow .item.summary,
+.module.log.module-bg-green .item.summary,
+.module.log.module-bg-darkgray .item.info,
+.module.log.module-bg-gray .item.info,
+.module.log.module-bg-lightgray .item.info,
+.module.log.module-bg-blue .item.info,
+.module.log.module-bg-red .item.info,
+.module.log.module-bg-orange .item.info,
+.module.log.module-bg-yellow .item.info,
+.module.log.module-bg-green .item.info, .module.log.module-bg-darkgray .item.date, .module.log.module-bg-gray .item.date, .module.log.module-bg-lightgray .item.date, .module.log.module-bg-blue .item.date, .module.log.module-bg-red .item.date, .module.log.module-bg-orange .item.date, .module.log.module-bg-yellow .item.date, .module.log.module-bg-green .item.date,
+.module.log.module-bg-darkgray .item.time,
+.module.log.module-bg-gray .item.time,
+.module.log.module-bg-lightgray .item.time,
+.module.log.module-bg-blue .item.time,
+.module.log.module-bg-red .item.time,
+.module.log.module-bg-orange .item.time,
+.module.log.module-bg-yellow .item.time,
+.module.log.module-bg-green .item.time,
+.module.log.module-bg-darkgray .item.datetime,
+.module.log.module-bg-gray .item.datetime,
+.module.log.module-bg-lightgray .item.datetime,
+.module.log.module-bg-blue .item.datetime,
+.module.log.module-bg-red .item.datetime,
+.module.log.module-bg-orange .item.datetime,
+.module.log.module-bg-yellow .item.datetime,
+.module.log.module-bg-green .item.datetime {
+  color: #fff;
+}
 
-	}
-	.log.module.groupboth {
-		//border-top: 1px solid red;
-	}
-	.log.module.groupspec {
-		//border-top: 1px solid green;
-	}
-	.log.module.groupinfo {
-		grid-template-columns: 1fr;
-		//border-top: 1px solid blue;
-	}
+.module.guide.summary-bg-lightgray .item.summary, .item.label,
+.item.summary,
+.item.info {
+  color: #424242;
+}
 
-	// TEXT-VARIATIONS
-	.log.module.text-medium {
-		@extend %fontsize-medium !optional;
-	}
+.module.guide.label-bg-lightgray .item.label, .module.guide.guide-label2 .item.label, .module.guide.module-bg-lightgray, .module.log.module-bg-lightgray, .item.date,
+.item.time,
+.item.datetime {
+  color: #BDBDBD;
+}
 
-	%log-highlight-default {
-		color: white;
-		grid-template-columns: 165px 1fr;
-		padding-left: 5px;
-		padding-right: 5px;
-		//padding: 2px 10px;
-		border-top: none;
-	}
+.module.guide.summary-bg-darkgray .item.summary, .module.guide.label-bg-darkgray .item.label, .module.guide.module-bg-darkgray, .module.log.module-bg-darkgray {
+  background-color: #424242;
+}
 
-	// HIGHLIGHTS
-	.log.module.highlight-red {
-		@extend %log-highlight-default !optional;
-		background-color: #e5565d;
-	}
+.module.guide.summary-bg-gray .item.summary, .module.guide.label-bg-gray .item.label, .module.guide.module-bg-gray, .module.log.module-bg-gray {
+  background-color: #BDBDBD;
+}
 
-	.log.module.highlight-blue {
-		@extend %log-highlight-default !optional;
-		background-color: #56a5e5;
-	}
+.module.guide.summary-bg-lightgray .item.summary, .module.guide.label-bg-lightgray .item.label, .module.guide.module-bg-lightgray, .module.log.module-bg-lightgray {
+  background-color: #EEEEEE;
+}
 
-	.log.module.highlight-green {
-		@extend %log-highlight-default !optional;
-		background-color: #56e597;
-	}
-*/
+.module.guide.summary-bg-blue .item.summary, .module.guide.label-bg-blue .item.label, .module.guide.module-bg-blue, .module.log.module-bg-blue {
+  background-color: #0079bf;
+}
+
+.module.guide.summary-bg-red .item.summary, .module.guide.label-bg-red .item.label, .module.guide.module-bg-red, .module.log.module-bg-red {
+  background-color: #eb5a46;
+}
+
+.module.guide.summary-bg-orange .item.summary, .module.guide.label-bg-orange .item.label, .module.guide.module-bg-orange, .module.log.module-bg-orange {
+  background-color: #ff9f1a;
+}
+
+.module.guide.summary-bg-yellow .item.summary, .module.guide.label-bg-yellow .item.label, .module.guide.module-bg-yellow, .module.log.module-bg-yellow {
+  background-color: #f2d600;
+}
+
+.module.guide.label-bg-green .item.label, .module.guide.module-bg-green, .module.log.module-bg-green {
+  background-color: #61bd4f;
+}
+
+.item.date,
+.item.time,
+.item.datetime {
+  font-weight: 500;
+}
+.module.log.module-bg-darkgray .item.date, .module.log.module-bg-gray .item.date, .module.log.module-bg-lightgray .item.date, .module.log.module-bg-blue .item.date, .module.log.module-bg-red .item.date, .module.log.module-bg-orange .item.date, .module.log.module-bg-yellow .item.date, .module.log.module-bg-green .item.date,
+.module.log.module-bg-darkgray .item.time,
+.module.log.module-bg-gray .item.time,
+.module.log.module-bg-lightgray .item.time,
+.module.log.module-bg-blue .item.time,
+.module.log.module-bg-red .item.time,
+.module.log.module-bg-orange .item.time,
+.module.log.module-bg-yellow .item.time,
+.module.log.module-bg-green .item.time,
+.module.log.module-bg-darkgray .item.datetime,
+.module.log.module-bg-gray .item.datetime,
+.module.log.module-bg-lightgray .item.datetime,
+.module.log.module-bg-blue .item.datetime,
+.module.log.module-bg-red .item.datetime,
+.module.log.module-bg-orange .item.datetime,
+.module.log.module-bg-yellow .item.datetime,
+.module.log.module-bg-green .item.datetime {
+  font-weight: 600;
+}
+
 .module.log {
-  margin-bottom: 0.5rem;
-  padding-top: 2px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #ddd;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 4px;
+}
+.module.log.module-bg-darkgray, .module.log.module-bg-gray, .module.log.module-bg-lightgray, .module.log.module-bg-blue, .module.log.module-bg-red, .module.log.module-bg-orange, .module.log.module-bg-yellow, .module.log.module-bg-green {
+  border-top: 0;
+  padding: 0.5rem;
 }
 .module.log.main-side {
   display: grid;
   grid-template-areas: "log-main log-side";
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 1.5rem;
-  margin-bottom: 0.5rem;
-  padding-top: 2px;
-  border-top: 1px solid #eee;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 1rem;
 }
 .module.log.main-side .items.main {
-  background-color: yellow;
   grid-area: log-main;
 }
 .module.log.main-side .items.side {
-  background-color: red;
   grid-area: log-side;
 }
 
 .module.log.side-main {
   display: grid;
   grid-template-areas: "log-side log-main";
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 1.5rem;
-  margin-bottom: 0.5rem;
-  padding-top: 2px;
-  border-top: 1px solid #eee;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 1rem;
 }
 .module.log.side-main .items.main {
-  background-color: yellow;
   grid-area: log-main;
 }
 .module.log.side-main .items.side {
-  background-color: red;
   grid-area: log-side;
 }
 
-/* SETUP-LOG | 1.0.2 | 200607 | setup-be/block-custom/setup-log-102/guide.scss
+/* SETUP-LOG | 1.0.3 | 200610 | setup-be/block-custom/setup-log-103/guide.scss
 ---------------------------------------------------------------------------------------------------- */
-.module.guide.summary-bg-darkgray .item.summary, .module.guide.summary-bg-gray .item.summary, .module.guide.summary-bg-lightgray .item.summary, .module.guide.summary-bg-blue .item.summary, .module.guide.summary-bg-red .item.summary, .module.guide.summary-bg-orange .item.summary, .module.guide.summary-bg-yellow .item.summary, .module.guide.summary-bg-green .item.summary, .module.guide.label-bg-darkgray .item.label, .module.guide.label-bg-gray .item.label, .module.guide.label-bg-lightgray .item.label, .module.guide.label-bg-blue .item.label, .module.guide.label-bg-red .item.label, .module.guide.label-bg-orange .item.label, .module.guide.label-bg-yellow .item.label, .module.guide.label-bg-green .item.label {
-  color: #fff;
+.module.guide.module-bg-darkgray, .module.guide.module-bg-gray, .module.guide.module-bg-lightgray, .module.guide.module-bg-blue, .module.guide.module-bg-red, .module.guide.module-bg-orange, .module.guide.module-bg-yellow, .module.guide.module-bg-green {
+  border-top: 0;
+  padding: 0.5rem;
 }
-
-.module.guide.summary-bg-lightgray .item.summary, .item.label {
-  color: #424242;
-}
-
-.module.guide.label-bg-lightgray .item.label, .module.guide.guide-label2 .item.label {
-  color: #BDBDBD;
-}
-
-.module.guide.summary-bg-darkgray .item.summary, .module.guide.label-bg-darkgray .item.label {
-  background-color: #424242;
-}
-
-.module.guide.summary-bg-gray .item.summary, .module.guide.label-bg-gray .item.label {
-  background-color: #BDBDBD;
-}
-
-.module.guide.summary-bg-lightgray .item.summary, .module.guide.label-bg-lightgray .item.label {
-  background-color: #EEEEEE;
-}
-
-.module.guide.summary-bg-blue .item.summary, .module.guide.label-bg-blue .item.label {
-  background-color: #0079bf;
-}
-
-.module.guide.summary-bg-red .item.summary, .module.guide.label-bg-red .item.label {
-  background-color: #eb5a46;
-}
-
-.module.guide.summary-bg-orange .item.summary, .module.guide.label-bg-orange .item.label {
-  background-color: #ff9f1a;
-}
-
-.module.guide.summary-bg-yellow .item.summary, .module.guide.label-bg-yellow .item.label {
-  background-color: #f2d600;
-}
-
-.module.guide.label-bg-green .item.label {
-  background-color: #61bd4f;
-}
-
 .item.label {
   font-weight: 600;
 }
