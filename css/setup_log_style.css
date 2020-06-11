@@ -390,6 +390,9 @@ a.shadow:link {
   padding-bottom: 0.5rem;
   margin-bottom: 4px;
 }
+.module.log.module-no-border {
+  border-top: 0;
+}
 .module.log.module-bg-darkgray, .module.log.module-bg-gray, .module.log.module-bg-lightgray, .module.log.module-bg-blue, .module.log.module-bg-red, .module.log.module-bg-orange, .module.log.module-bg-yellow, .module.log.module-bg-green {
   border-top: 0;
   padding: 0.5rem;
