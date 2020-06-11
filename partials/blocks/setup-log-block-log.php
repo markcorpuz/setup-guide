@@ -56,7 +56,7 @@ echo '<div class="'.join( ' ', $classes ).'">';
      * SIDE CLOSING
      * 
      */
-    if( $log_label || $log_date || $log_time || $log_detail ) {
+    if( $log_date || $log_time ) {
         echo '</div>';
     }
 
