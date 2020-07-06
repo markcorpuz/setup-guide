@@ -1,4 +1,6 @@
-/* SETUP-BE | 1.0.0 | 200326 | assets/scss/partials/base.scss
+/* SETUP-LOG | 1.0.3 | 200702 | assets/scss/main.scss
+---------------------------------------------------------------------------------------------------- */
+/* SETUP-BE | 1.0.1 | 200624 | assets/scss/partials/base.scss
 ---------------------------------------------------------------------------------------------------- */
 /*  SETUP-BE | 1.0.0 | 200408 | setup-be/modules/setup-be-100/brand-color.scss
 ---------------------------------------------------------------------------------------------------- */
@@ -163,6 +165,258 @@
   font-size: 0.75rem;
 }
 
+/* SETUP-BE | 1.0.1 | 200624 | setup-be/ui/setup-be-101/margin.scss
+---------------------------------------------------------------------------------------------------- */
+.margin-top, .margin-y, .margin {
+  margin-top: 1rem;
+}
+
+.margin-tiny-top, .margin-tiny {
+  margin-top: 0.25rem;
+}
+
+.margin-small-top, .margin-small {
+  margin-top: 0.5rem;
+}
+
+.margin-medium-top, .margin-medium {
+  margin-top: 1.5rem;
+}
+
+.margin-large-top, .margin-large {
+  margin-top: 2rem;
+}
+
+.module.guide.guide-titleshadow {
+  margin-top: 4rem;
+}
+
+.margin-huge-top, .margin-huge {
+  margin-top: 3.125rem;
+}
+
+.margin-zero-top, .margin-zero-y, .margin-zero {
+  margin-top: 0;
+}
+
+.margin-bottom, .margin {
+  margin-bottom: 1rem;
+}
+
+.margin-tiny-bottom, .margin-tiny {
+  margin-bottom: 0.25rem;
+}
+
+.margin-small-bottom, .margin-small {
+  margin-bottom: 0.5rem;
+}
+
+.module.guide.guide-titleshadow, .margin-medium-bottom, .margin-medium {
+  margin-bottom: 1.5rem;
+}
+
+.margin-large-bottom, .margin-large {
+  margin-bottom: 2rem;
+}
+
+.margin-large2x-bottom {
+  margin-bottom: 4rem;
+}
+
+.margin-huge-bottom, .margin-huge {
+  margin-bottom: 3.125rem;
+}
+
+.margin-huge2x-bottom {
+  margin-bottom: 6.25rem;
+}
+
+.margin-zero-bottom, .margin-zero-y, .margin-zero {
+  margin-bottom: 0;
+}
+
+.margin-left, .margin-x, .margin {
+  margin-left: 1rem;
+}
+
+.margin-tiny-left, .margin-tiny {
+  margin-left: 0.25rem;
+}
+
+.margin-small-left, .margin-small {
+  margin-left: 0.5rem;
+}
+
+.margin-medium-left, .margin-medium {
+  margin-left: 1.5rem;
+}
+
+.margin-large-left, .margin-large {
+  margin-left: 2rem;
+}
+
+.margin-huge-left, .margin-huge {
+  margin-left: 3.125rem;
+}
+
+.margin-zero-left, .margin-zero-x, .margin-zero {
+  margin-left: 0;
+}
+
+.margin-right, .margin-x, .margin {
+  margin-right: 1rem;
+}
+
+.margin-tiny-right, .margin-tiny {
+  margin-right: 0.25rem;
+}
+
+.margin-small-right, .margin-small {
+  margin-right: 0.5rem;
+}
+
+.margin-medium-right, .margin-medium {
+  margin-right: 1.5rem;
+}
+
+.margin-large-right, .margin-large {
+  margin-right: 2rem;
+}
+
+.margin-huge-right, .margin-huge {
+  margin-right: 3.125rem;
+}
+
+.margin-zero-right, .margin-zero-x, .margin-zero {
+  margin-right: 0;
+}
+
+/* SETUP-BE | 1.0.1 | 200624 | setup-be/ui/setup-be-101/margin-all.scss
+---------------------------------------------------------------------------------------------------- */
+/* SETUP-BE | 1.0.1 | 200624 | setup-be/ui/setup-be-101/padding.scss
+---------------------------------------------------------------------------------------------------- */
+.padding-top, .padding-y, .padding {
+  padding-top: 1rem;
+}
+
+.padding-tiny-top, .padding-tiny {
+  padding-top: 0.25rem;
+}
+
+.padding-small-top, .padding-small {
+  padding-top: 0.5rem;
+}
+
+.padding-medium-top, .padding-medium {
+  padding-top: 1.5rem;
+}
+
+.padding-large-top, .padding-large {
+  padding-top: 2rem;
+}
+
+.padding-huge-top, .padding-huge {
+  padding-top: 3.125rem;
+}
+
+.padding-zero-top, .padding-zero-y, .padding-zero {
+  padding-top: 0;
+}
+
+.padding-bottom, .padding {
+  padding-bottom: 1rem;
+}
+
+.padding-tiny-bottom, .padding-tiny {
+  padding-bottom: 0.25rem;
+}
+
+.padding-small-bottom, .padding-small {
+  padding-bottom: 0.5rem;
+}
+
+.padding-medium-bottom, .padding-medium {
+  padding-bottom: 1.5rem;
+}
+
+.padding-large-bottom, .padding-large {
+  padding-bottom: 2rem;
+}
+
+.padding-large2x-bottom {
+  padding-bottom: 4rem;
+}
+
+.padding-huge-bottom, .padding-huge {
+  padding-bottom: 3.125rem;
+}
+
+.padding-huge2x-bottom {
+  padding-bottom: 6.25rem;
+}
+
+.padding-zero-bottom, .padding-zero-y, .padding-zero {
+  padding-bottom: 0;
+}
+
+.padding-left, .padding-x, .padding {
+  padding-left: 1rem;
+}
+
+.padding-tiny-left, .padding-tiny {
+  padding-left: 0.25rem;
+}
+
+.padding-small-left, .padding-small {
+  padding-left: 0.5rem;
+}
+
+.padding-medium-left, .padding-medium {
+  padding-left: 1.5rem;
+}
+
+.padding-large-left, .padding-large {
+  padding-left: 2rem;
+}
+
+.padding-huge-left, .padding-huge {
+  padding-left: 3.125rem;
+}
+
+.padding-zero-left, .padding-zero-x, .padding-zero {
+  padding-left: 0;
+}
+
+.padding-right, .padding-x, .padding {
+  padding-right: 1rem;
+}
+
+.padding-tiny-right, .padding-tiny {
+  padding-right: 0.25rem;
+}
+
+.padding-small-right, .padding-small {
+  padding-right: 0.5rem;
+}
+
+.padding-medium-right, .padding-medium {
+  padding-right: 1.5rem;
+}
+
+.padding-large-right, .padding-large {
+  padding-right: 2rem;
+}
+
+.padding-huge-right, .padding-huge {
+  padding-right: 3.125rem;
+}
+
+.padding-zero-right, .padding-zero-x, .padding-zero {
+  padding-right: 0;
+}
+
+/* SETUP-BE | 1.0.1 | 200624 | setup-be/ui/setup-be-101/padding-all.scss
+---------------------------------------------------------------------------------------------------- */
 /* SETUP-BE | 1.0.0 | 200514 | setup-be/ui/setup-be-100/shadow.scss
 ---------------------------------------------------------------------------------------------------- */
 .shadow-inner,
@@ -247,7 +501,7 @@ a.shadow:link {
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
 }
 
-.shadow-edge-top {
+.module.guide.guide-titleshadow, .shadow-edge-top {
   -webkit-box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.25);
   box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.25);
@@ -277,9 +531,9 @@ a.shadow:link {
   box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.75);
 }
 
-/* SETUP-LOG | 1.0.3 | 200610 | setup-be/block-custom/setup-log-103/log.scss
+/* SETUP-LOG | 1.0.3 | 200702 | setup-be/block-custom/setup-log-103/log.scss
 ---------------------------------------------------------------------------------------------------- */
-.module.guide.summary-bg-darkgray .item.summary, .module.guide.summary-bg-gray .item.summary, .module.guide.summary-bg-lightgray .item.summary, .module.guide.summary-bg-blue .item.summary, .module.guide.summary-bg-red .item.summary, .module.guide.summary-bg-orange .item.summary, .module.guide.summary-bg-yellow .item.summary, .module.guide.summary-bg-green .item.summary, .module.guide.label-bg-darkgray .item.label, .module.guide.label-bg-gray .item.label, .module.guide.label-bg-lightgray .item.label, .module.guide.label-bg-blue .item.label, .module.guide.label-bg-red .item.label, .module.guide.label-bg-orange .item.label, .module.guide.label-bg-yellow .item.label, .module.guide.label-bg-green .item.label, .module.guide.module-bg-darkgray, .module.guide.module-bg-gray, .module.guide.module-bg-lightgray, .module.guide.module-bg-blue, .module.guide.module-bg-red, .module.guide.module-bg-orange, .module.guide.module-bg-yellow, .module.guide.module-bg-green, .module.log.module-bg-darkgray, .module.log.module-bg-gray, .module.log.module-bg-lightgray, .module.log.module-bg-blue, .module.log.module-bg-red, .module.log.module-bg-orange, .module.log.module-bg-yellow, .module.log.module-bg-green, .module.log.module-bg-darkgray .item.label, .module.log.module-bg-gray .item.label, .module.log.module-bg-lightgray .item.label, .module.log.module-bg-blue .item.label, .module.log.module-bg-red .item.label, .module.log.module-bg-orange .item.label, .module.log.module-bg-yellow .item.label, .module.log.module-bg-green .item.label,
+.module.guide.guide-titleshadow > .item.label, .module.guide.summary-bg-darkgray .item.summary, .module.guide.summary-bg-gray .item.summary, .module.guide.summary-bg-lightgray .item.summary, .module.guide.summary-bg-blue .item.summary, .module.guide.summary-bg-red .item.summary, .module.guide.summary-bg-orange .item.summary, .module.guide.summary-bg-yellow .item.summary, .module.guide.summary-bg-green .item.summary, .module.guide.label-bg-darkgray .item.label, .module.guide.label-bg-gray .item.label, .module.guide.label-bg-lightgray .item.label, .module.guide.label-bg-blue .item.label, .module.guide.label-bg-red .item.label, .module.guide.label-bg-orange .item.label, .module.guide.label-bg-yellow .item.label, .module.guide.label-bg-green .item.label, .module.guide.module-bg-darkgray, .module.guide.module-bg-gray, .module.guide.module-bg-lightgray, .module.guide.module-bg-blue, .module.guide.module-bg-red, .module.guide.module-bg-orange, .module.guide.module-bg-yellow, .module.guide.module-bg-green, .module.log.module-bg-darkgray, .module.log.module-bg-gray, .module.log.module-bg-lightgray, .module.log.module-bg-blue, .module.log.module-bg-red, .module.log.module-bg-orange, .module.log.module-bg-yellow, .module.log.module-bg-green, .module.log.module-bg-darkgray .item.label, .module.log.module-bg-gray .item.label, .module.log.module-bg-lightgray .item.label, .module.log.module-bg-blue .item.label, .module.log.module-bg-red .item.label, .module.log.module-bg-orange .item.label, .module.log.module-bg-yellow .item.label, .module.log.module-bg-green .item.label,
 .module.log.module-bg-darkgray .item.summary,
 .module.log.module-bg-gray .item.summary,
 .module.log.module-bg-lightgray .item.summary,
@@ -327,7 +581,7 @@ a.shadow:link {
   color: #BDBDBD;
 }
 
-.module.guide.summary-bg-darkgray .item.summary, .module.guide.label-bg-darkgray .item.label, .module.guide.module-bg-darkgray, .module.log.module-bg-darkgray {
+.module.guide.guide-titleshadow > .item.label, .module.guide.summary-bg-darkgray .item.summary, .module.guide.label-bg-darkgray .item.label, .module.guide.module-bg-darkgray, .module.log.module-bg-darkgray {
   background-color: #424242;
 }
 
@@ -357,6 +611,10 @@ a.shadow:link {
 
 .module.guide.label-bg-green .item.label, .module.guide.module-bg-green, .module.log.module-bg-green {
   background-color: #61bd4f;
+}
+
+.module.guide.guide-titleshadow > .item.label {
+  display: inline-block;
 }
 
 .item.date,
@@ -423,7 +681,7 @@ a.shadow:link {
   grid-area: log-side;
 }
 
-/* SETUP-LOG | 1.0.3 | 200610 | setup-be/block-custom/setup-log-103/guide.scss
+/* SETUP-LOG | 1.0.3 | 200702 | setup-be/block-custom/setup-log-103/guide.scss
 ---------------------------------------------------------------------------------------------------- */
 .module.guide.module-bg-darkgray, .module.guide.module-bg-gray, .module.guide.module-bg-lightgray, .module.guide.module-bg-blue, .module.guide.module-bg-red, .module.guide.module-bg-orange, .module.guide.module-bg-yellow, .module.guide.module-bg-green {
   border-top: 0;
@@ -443,5 +701,8 @@ a.shadow:link {
 }
 .module.guide.summary-bg-darkgray .item.summary, .module.guide.summary-bg-gray .item.summary, .module.guide.summary-bg-lightgray .item.summary, .module.guide.summary-bg-blue .item.summary, .module.guide.summary-bg-red .item.summary, .module.guide.summary-bg-orange .item.summary, .module.guide.summary-bg-yellow .item.summary, .module.guide.summary-bg-green .item.summary {
   margin-top: 0;
+  padding: 4px 8px;
+}
+.module.guide.guide-titleshadow > .item.label {
   padding: 4px 8px;
 }
