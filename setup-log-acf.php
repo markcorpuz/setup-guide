@@ -47,6 +47,9 @@ function setup_log_block_acf_init() {
             'icon'              => 'list-view',
             'mode'              => 'edit',
             'keywords'          => array( 'update', 'log' ),
+            'supports'          => [
+                'jsx'           => true,
+            ]
         ),
 
     );

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: SETUP LOG
  * Description: Display custom Guttenburg block via Advanced Custom Fields.
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author: Jake Almeda & Mark Corpuz
  * Author URI: https://smarterwebpackages.com/
  * Network: true
@@ -30,9 +30,16 @@ function setup_log_function() {
 
 }
 
+/**
+ * NOTE: Temporarily disabling plugin based styling due to the repetitive nature of reusing styles.
+ * Remove comments below to allow if we want the styles to be independent but at the moment, we're using the default child theme styles
+ * 
+ */
+/*
 if ( !is_admin() ) {
 
     // ENQUEUE SCRIPTS
     add_action( 'wp_enqueue_scripts', 'setup_log_function' );
 
 }
+*/

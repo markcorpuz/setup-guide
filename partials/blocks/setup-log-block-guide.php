@@ -52,6 +52,17 @@ echo '<div class="'.join( ' ', $classes ).'">';
         echo '<div class="item info">'. $guide_info .'</div>';
     }
 
+    /**
+     * INNERBLOCK
+     * 
+     */
+    $innerblockarea = '<InnerBlocks />';
+    if ( !empty ($innerblockarea) ) {
+         echo '<div class="innerblock">';
+         echo '<InnerBlocks />';
+         echo '</div>';
+    }
+
 /**
  * MODULE CLOSING
  * 
