@@ -33,7 +33,7 @@ function setup_log_block_acf_init() {
         'logs' => array(
             'name'                  => 'log',
             'title'                 => __('Log'),
-            'render_template'       => plugin_dir_path( __FILE__ ).'partials/blocks/setup-log-block-log.php',
+            'render_template'       => plugin_dir_path( __FILE__ ).'partials/blocks/setup-log-listall.php',
             'category'              => 'setup',
             'icon'                  => 'list-view',
             'mode'                  => 'edit',
@@ -48,18 +48,6 @@ function setup_log_block_acf_init() {
 
     );
 
-        /*'guides' => array(
-            'name'              => 'guide',
-            'title'             => __('Guide'),
-            'render_template'   => plugin_dir_path( __FILE__ ).'partials/blocks/setup-log-block-guide.php',
-            'category'          => 'setup',
-            'icon'              => 'list-view',
-            'mode'              => 'edit',
-            'keywords'          => array( 'update', 'log' ),
-            'supports'          => [
-                'jsx'           => true,
-            ],
-        ),*/
     // Bail out if function doesn’t exist or no blocks available to register.
     if ( !function_exists( 'acf_register_block_type' ) && !$blocks ) {
         return;

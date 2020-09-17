@@ -2,7 +2,7 @@
 /**
  * Plugin Name: SETUP LOG
  * Description: Display custom Guttenburg block via Advanced Custom Fields.
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Jake Almeda & Mark Corpuz
  * Author URI: https://smarterwebpackages.com/
  * Network: true
