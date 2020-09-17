@@ -55,10 +55,16 @@ function setup_log_block_acf_init() {
     
     // this loop is broken, how do we register multiple blocks in one go?
     // Register all available blocks.
-//    if( get_current_user_id() == 2 ) {
+    $user = wp_get_current_user();
+
+    $allowed_roles = array( 'administrator' ); // can also be array( 'editor', 'administrator', 'author' );
+
+    if( array_intersect( $allowed_roles, $user->roles ) ) {
+
         foreach( $blocks as $block ) {
             acf_register_block_type( $block );
         }
-//    }
+
+    }
   
 }

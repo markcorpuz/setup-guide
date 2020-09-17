@@ -101,12 +101,12 @@ echo '<div class="'.join( ' ', $classes ).'">';
      * INNERBLOCK
      * 
      */
-    $innerblockarea = '<InnerBlocks />';
-    if ( !empty ($innerblockarea) ) {
+    //$innerblockarea = '<InnerBlocks />';
+    //if ( !empty ($innerblockarea) ) {
          echo '<div class="innerblock">';
          echo '<InnerBlocks />';
          echo '</div>';
-    }
+    //}
 
 /**
  * MODULE CLOSING
