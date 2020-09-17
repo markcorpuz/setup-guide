@@ -59,7 +59,7 @@ echo '<div class="'.join( ' ', $classes ).'">';
     $innerblockarea = '<InnerBlocks />';
     if ( !empty ($innerblockarea) ) {
          echo '<div class="innerblock">';
-         echo '<InnerBlocks />';
+         echo '<InnerBlocks template="'.esc_attr( wp_json_encode( $template ).'" />';
          echo '</div>';
     }
 

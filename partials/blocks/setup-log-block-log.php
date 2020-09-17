@@ -25,6 +25,18 @@ if( array_key_exists( 'className', $block ) ) {
     $classes = array_merge( $classes, explode( ' ', $block[ 'className' ] ) );
 }
 
+
+$template = array(
+    array('core/heading', array(
+        'level' => 2,
+        'content' => 'Title Goes Here',
+    )),
+    array( 'core/paragraph', array(
+        'content' => '<strong>Colorway:</strong> <br /><strong>Style Code:</strong>  <br /><strong>Release Date:</strong> <br /><strong>MSRP:</strong> ',
+    ) )
+);
+
+
 /**
  * MODULE OPENING
  * 
@@ -35,15 +47,16 @@ echo '<div class="'.join( ' ', $classes ).'">';
      * SIDE OPENING
      * 
      */
+    
     if( $log_date || $log_time ) {
         echo '<div class="items side">';
     }
-
+    
         /**
          * DATE, TIME & DATETIME
          * 
          */
-
+        
         if ( $log_date && $log_time ) {
             echo '<div class="item datetime">'. $log_date .' '. $log_time .'</div>';
         } else if ( $log_date ) {
@@ -51,7 +64,7 @@ echo '<div class="'.join( ' ', $classes ).'">';
         } else if ( $log_time ) {
             echo '<div class="item time">'. $log_time .'</div>';
         }
-
+        
     /**
      * SIDE CLOSING
      * 
@@ -67,7 +80,7 @@ echo '<div class="'.join( ' ', $classes ).'">';
     if( $log_label || $log_summary || $log_info ) {
         echo '<div class="items main">';
     }
-
+    
         /**
          * LABEL
          * 
@@ -88,6 +101,7 @@ echo '<div class="'.join( ' ', $classes ).'">';
          * INFO
          * 
          */
+
         if ( $log_info ) {
             echo '<div class="item info">'. $log_info .'</div>';
         }
@@ -99,9 +113,26 @@ echo '<div class="'.join( ' ', $classes ).'">';
     if( $log_label || $log_summary || $log_info ) {
         echo '</div>';
     }
+    
+    //$allowed_blocks = array( 'core/heading', 'core/paragraph' );
+    
+    ?><div class="setup-content-code"><?php
+        echo '<h4>'.get_field( 'log_code' ).'</h4>';
+    ?></div><?php
 
+    echo '<div class="block-about__content">
+        <InnerBlocks />
+    </div>';
+    //<InnerBlocks template="'.esc_attr( wp_json_encode( $template ) ).'" />
+    ?><div class="setup-content-detail"><?php
+        echo '<h4>'.get_field( 'log_detail' ).'</h4>';
+    ?></div><?php
 /**
  * MODULE CLOSING
  * 
  */
 echo '</div>';
+
+/*
+<InnerBlocks template="<?php echo esc_attr( wp_json_encode( $template ) ); ?>" />
+*/
