@@ -1,0 +1,17 @@
+/* SETUP-GUIDE | 1.0.6 | 200920 | assets/scss/main.scss
+---------------------------------------------------------------------------------------------------- */
+/* SETUP-GUIDE | 1.0.6 | 200920 | setup-be/block-custom/setup-log-106/guide.scss
+---------------------------------------------------------------------------------------------------- */
+.module.guide.guide-box {
+  padding: 1rem;
+  -webkit-box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.module.guide.guide-prefix {
+  padding-top: 1rem;
+  -webkit-box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.25);
+}

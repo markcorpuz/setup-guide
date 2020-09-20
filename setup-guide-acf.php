@@ -32,7 +32,7 @@ function setup_guide_block_acf_init() {
         
         'guides' => array(
             'name'                  => 'guide',
-            'title'                 => __('Log'),
+            'title'                 => __('Guide'),
             'render_template'       => plugin_dir_path( __FILE__ ).'partials/blocks/setup-guide-listall.php',
             'category'              => 'setup',
             'icon'                  => 'list-view',
