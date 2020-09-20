@@ -1,28 +1,28 @@
 <?php
 /**
- * BLOCK-LOG
+ * BLOCK-GUIDE
  *
- * @package      SETUP-LOG
+ * @package      SETUP-GUIDE
  * @author       Mark Corpuz
  * @since        1.0.0
  * @license      GPL-2.0+
 **/
 
-$log_date       = get_field( 'log_date' );
-$log_time       = get_field( 'log_time' );
-$log_code       = get_field( 'log_code' );
-$log_label      = get_field( 'log_label' );
-$log_title      = get_field( 'log_title' );
-$log_summary    = get_field( 'log_summary' );
-$log_info       = get_field( 'log_info' );
-$log_user       = get_field( 'log_user' );
+$guide_date       = get_field( 'log_date' );
+$guide_time       = get_field( 'log_time' );
+$guide_code       = get_field( 'log_code' );
+$guide_label      = get_field( 'log_label' );
+$guide_title      = get_field( 'log_title' );
+$guide_summary    = get_field( 'log_summary' );
+$guide_info       = get_field( 'log_info' );
+$guide_user       = get_field( 'log_user' );
 
 
 /**
  * CLASS SELECTORS
  * 
  */
-$classes[] = 'module log log-listall';
+$classes[] = 'module guide guide-listall';
 if( array_key_exists( 'className', $block ) ) {
     $classes = array_merge( $classes, explode( ' ', $block[ 'className' ] ) );
 }
@@ -37,64 +37,64 @@ echo '<div class="'.join( ' ', $classes ).'">';
      * DATE
      * 
      */
-    if ( $log_date ) {
-        echo '<div class="item date">'. $log_date .'</div>';
+    if ( $guide_date ) {
+        echo '<div class="item date">'. $guide_date .'</div>';
     }
 
     /**
      * TIME
      * 
      */
-    if ( $log_time ) {
-        echo '<div class="item time">'. $log_time .'</div>';
+    if ( $guide_time ) {
+        echo '<div class="item time">'. $guide_time .'</div>';
     }
 
     /**
      * CODE
      * 
      */
-    if ( $log_code ) {
-        echo '<div class="item code">'. $log_code .'</div>';
+    if ( $guide_code ) {
+        echo '<div class="item code">'. $guide_code .'</div>';
     }
 
     /**
      * LABEL
      * 
      */
-    if ( $log_label ) {
-        echo '<div class="item label">'. $log_label .'</div>';
+    if ( $guide_label ) {
+        echo '<div class="item label">'. $guide_label .'</div>';
     }
 
     /**
      * TITLE
      * 
      */
-    if ( $log_title ) {
-        echo '<div class="item title">'. $log_title .'</div>';
+    if ( $guide_title ) {
+        echo '<div class="item title">'. $guide_title .'</div>';
     }
 
     /**
      * SUMMARY
      * 
      */
-    if ( $log_summary ) {
-        echo '<div class="item summary">'. $log_summary .'</div>';
+    if ( $guide_summary ) {
+        echo '<div class="item summary">'. $guide_summary .'</div>';
     }
 
     /**
      * INFO
      * 
      */
-    if ( $log_info ) {
-        echo '<div class="item info">'. $log_info .'</div>';
+    if ( $guide_info ) {
+        echo '<div class="item info">'. $guide_info .'</div>';
     }
 
     /**
      * USER
      * 
      */
-    if ( $log_user ) {
-        echo '<div class="item user">'. $log_user .'</div>';
+    if ( $guide_user ) {
+        echo '<div class="item user">'. $guide_user .'</div>';
     }
 
     /**

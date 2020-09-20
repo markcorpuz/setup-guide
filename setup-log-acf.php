@@ -5,8 +5,8 @@
  * Register Custom Block Category
  * 
  */
-add_filter( 'block_categories', 'setup_log_block_categories', 10, 2 );
-function setup_log_block_categories( $categories ) {
+add_filter( 'block_categories', 'setup_guide_block_categories', 10, 2 );
+function setup_guide_block_categories( $categories ) {
     return array_merge(
         array(
             array(
@@ -21,23 +21,23 @@ function setup_log_block_categories( $categories ) {
 
 
 /**
- * LOG (Custom Blocks)
+ * GUIDE (Custom Blocks)
  * Register Custom Blocks
  * 
  */
-add_action( 'acf/init', 'setup_log_block_acf_init' );
-function setup_log_block_acf_init() {
+add_action( 'acf/init', 'setup_guide_block_acf_init' );
+function setup_guide_block_acf_init() {
 
     $blocks = array(
         
-        'logs' => array(
-            'name'                  => 'log',
+        'guides' => array(
+            'name'                  => 'guide',
             'title'                 => __('Log'),
-            'render_template'       => plugin_dir_path( __FILE__ ).'partials/blocks/setup-log-listall.php',
+            'render_template'       => plugin_dir_path( __FILE__ ).'partials/blocks/setup-guide-listall.php',
             'category'              => 'setup',
             'icon'                  => 'list-view',
             'mode'                  => 'edit',
-            'keywords'              => array( 'update', 'log' ),
+            'keywords'              => array( 'update', 'guide' ),
             'supports'              => [
                 'align'             => false,
                 'anchor'            => true,
