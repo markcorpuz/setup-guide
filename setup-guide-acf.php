@@ -46,6 +46,22 @@ function setup_guide_block_acf_init() {
             ],
         ),
 
+        'guidebox' => array(
+            'name'                  => 'guidebox',
+            'title'                 => __('Guide Box'),
+            'render_template'       => plugin_dir_path( __FILE__ ).'partials/blocks/setup-guide-box.php',
+            'category'              => 'setup',
+            'icon'                  => 'list-view',
+            'mode'                  => 'edit',
+            'keywords'              => array( 'update', 'guide', 'guide box', 'box' ),
+            'supports'              => [
+                'align'             => false,
+                'anchor'            => true,
+                'customClassName'   => true,
+                'jsx'               => true,
+            ],
+        ),
+
     );
 
     // Bail out if function doesn’t exist or no blocks available to register.
